@@ -1,2 +1,6 @@
-this is <%= $dsc_wrapper::server1 %> my file!!!
-this is <%= $dsc_wrapper::server2 %> my file!!!
+#this is <%= $dsc_wrapper::server1 %> my file!!!
+#this is <%= $dsc_wrapper::server2 %> my file!!!
+
+<% $dsc_wrapper::server.each |$s| { -%>
+my value is  <%= $s % awesome
+<% } %->
