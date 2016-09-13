@@ -2,8 +2,8 @@
 # there is also before
 
 class dsc_wrapper (
-  $server1 = '1.1.1.1'
-  $server2 = '2.2.2.2'
+  $server1 = '1.1.1.1',
+  $server2 = '2.2.2.2',
 )
 {
   service { 'BITS':
