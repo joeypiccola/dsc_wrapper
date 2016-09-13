@@ -12,7 +12,7 @@ class dsc_wrapper {
     ensure  => file,
     require => Package['atom'],
     notify  => Service['BITS'],
-    source  => 'puppet:///modules/dsc_wrapper/files/oi.txt',
+    source  => 'puppet:///modules/dsc_wrapper/oi.txt',
   }
 
   package { 'atom':
