@@ -1,0 +1,2 @@
+this is <%= $dsc_wrapper::server1 %> my file!!!
+this is <%= $dsc_wrapper::server2 %> my file!!!

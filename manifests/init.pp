@@ -4,6 +4,9 @@
 class dsc_wrapper {
 
 
+  $server1 = '1.1.1.1'
+  $server2 = '2.2.2.2'
+
   service { 'BITS':
     ensure  => running,
   }
@@ -12,7 +15,7 @@ class dsc_wrapper {
     ensure  => file,
     require => Package['atom'],
     notify  => Service['BITS'],
-    source  => 'puppet:///modules/dsc_wrapper/oi.txt',
+    content => template('dsc_wrapper/oi.txt.epp'),
   }
 
   package { 'atom':
