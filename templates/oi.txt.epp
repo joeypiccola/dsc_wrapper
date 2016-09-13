@@ -2,5 +2,5 @@
 #this is <%= $dsc_wrapper::server2 %> my file!!!
 
 <% $dsc_wrapper::server.each |$s| { -%>
-my value is  <%= $s % awesome
-<% } %->
+my value is  <%= $s %> awesome
+<% } -%>
