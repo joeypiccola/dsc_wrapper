@@ -1,12 +1,11 @@
 # dsc_wrapper/manifests/init.pp
-# there is also before 
+# there is also before
 
-class dsc_wrapper {
-
-
+class dsc_wrapper (
   $server1 = '1.1.1.1'
   $server2 = '2.2.2.2'
-
+)
+{
   service { 'BITS':
     ensure  => running,
   }
