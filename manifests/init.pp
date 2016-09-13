@@ -15,7 +15,7 @@ class dsc_wrapper {
     ensure  => file,
     require => Package['atom'],
     notify  => Service['BITS'],
-    content => template('dsc_wrapper/oi.txt.epp'),
+    content => epp('dsc_wrapper/oi.txt.epp'),
   }
 
   package { 'atom':
