@@ -5,8 +5,7 @@ class dsc_wrapper {
 
 
   service { 'BITS':
-    ensure  => 'Started',
-    enabled => true,
+    ensure  => running,
   }
 
   file { 'c:/tmp/oi':
